@@ -3,7 +3,7 @@
     "com.ptc.vuforia.engine": {
       "version": "file:com.ptc.vuforia.engine-10.29.6.tgz",
       "depth": 0,
-      "source": "local-tarball",
+      "source": "embedded",
       "dependencies": {
         "com.unity.ugui": "1.0.0",
         "com.unity.nuget.newtonsoft-json": "3.2.1"
