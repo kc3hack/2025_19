@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: e262e5c78195e73448a2e342a67f3d13
+  productGUID: 7f6fad24a2f327a4da656f1ec0932271
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -915,10 +915,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: d959edab-196b-4bd2-b15e-533699efa637
+  cloudProjectId: 2b93d7fe-10d5-4368-bfee-9a649da25cf5
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: KC3Hack2025_19 2025-02-16_10-06-23
+  projectName: KC3Hack2025_19 2025-02-16_10-31-33
   organizationId: wadru
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
