@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class TextManager : MonoBehaviour
+public class Sato_TextManager : MonoBehaviour
 {
     [SerializeField] TextMeshPro displaytext;
     [SerializeField] string registertext;
