@@ -4,7 +4,7 @@ using TMPro;
 
 public class K_Location : MonoBehaviour
 {
-    // GameObjectをメソッド外で定義することで、InspectorにてObjectを紐づけできる。
+    // 2つの現在の座標表示用テキストを取得
     [SerializeField] private TextMeshProUGUI LatitudeText;
     [SerializeField] private TextMeshProUGUI LongitudeText;
 
