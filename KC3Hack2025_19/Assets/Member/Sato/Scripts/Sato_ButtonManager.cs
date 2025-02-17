@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ButtonManager : MonoBehaviour
+public class Sato_ButtonManager : MonoBehaviour
 {
     [SerializeField] GameObject text;
     [SerializeField] GameObject basepoint;
