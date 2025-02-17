@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Member/Sato/ARSampleScene.unity
     guid: cd21bb3b83c039c4b963b12708486335
+  - enabled: 1
+    path: Assets/Member/Kakuda/k_GoogleMap.unity
+    guid: 3ee7b2d7f92059345ac26b0942a7bb29
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
