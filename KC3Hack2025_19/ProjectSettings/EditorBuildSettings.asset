@@ -14,9 +14,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Member/Miyazaki/MiyazakiScene.unity
     guid: 8c106a607f011c447a01338cc5078a1a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Member/Sato/SatoScene.unity
     guid: e8a28aee18e90c941a4363e079b94fa9
+  - enabled: 1
+    path: Assets/Member/Kakuda/k_GoogleMap.unity
+    guid: 3ee7b2d7f92059345ac26b0942a7bb29
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
