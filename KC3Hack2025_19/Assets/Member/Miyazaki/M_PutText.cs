@@ -1,3 +1,4 @@
+// using System.Numerics;
 using TMPro;
 using UnityEngine;
 
@@ -8,7 +9,9 @@ public class M_PutText : MonoBehaviour
     public GameObject targetObject3;
     public GameObject childObject; // 親オブジェクト
     public GameObject parentObject;
-    public TextMeshProUGUI textMeshProUGUI;
+    // public TextMeshProUGUI textMeshProUGUI;
+    // public GameObject creatTextObject;
+    // public GameObject Origin;
 
     public void PutTextObject() // 非アクティブにするオブジェクトを有効化するメソッド
     {
@@ -16,8 +19,10 @@ public class M_PutText : MonoBehaviour
         targetObject2.SetActive(false);
         targetObject3.SetActive(false);
         childObject.transform.SetParent(parentObject.transform, true);
-        textMeshProUGUI.text = "(" + childObject.transform.position.x + "," + childObject.transform.position.y + "," + childObject.transform.position.z + ")";
+        // textMeshProUGUI.text = "(" + childObject.transform.position.x + "," + childObject.transform.position.y + "," + childObject.transform.position.z + ")";
     }
+
+
 
     void SendTextData()
     {
