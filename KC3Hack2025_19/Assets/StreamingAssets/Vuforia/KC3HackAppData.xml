@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="wanko" size="0.200000 0.200000" />
+    <ImageTarget name="okan" size="0.200000 0.200000" />
+    <ImageTarget name="honakun" size="0.200000 0.200000" />
+    <ImageTarget name="spain" size="0.200000 0.132838" />
+    <ImageTarget name="as20230106004565" size="0.200000 0.141562" />
+    <ImageTarget name="myakumyaku_standard" size="0.200000 0.114419" />
+    <ImageTarget name="1xmdy2vm_400x400" size="0.200000 0.200000" />
     <ImageTarget name="logo" size="0.200000 0.200000" />
   </Tracking>
 </QCARConfig>
