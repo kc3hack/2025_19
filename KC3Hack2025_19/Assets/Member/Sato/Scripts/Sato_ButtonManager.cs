@@ -4,20 +4,22 @@ using TMPro;
 public class Sato_ButtonManager : MonoBehaviour
 {
     //ImageTarget‚ÌTMP
-    [SerializeField] GameObject text;
+    public GameObject text;
     //ImageTarget‚ÌŒ´“_
-    [SerializeField] GameObject basepoint;
+    public GameObject basepoint;
     //ImageTarget‚ÌTMP‚Ìtext
-    [SerializeField] TextMeshPro textMeshPro;
+    public TextMeshPro textMeshPro;
     //x,y,z‚Ì‘‰Á•
     float addposition = 0.05f;
     //text‚Ìsize
     int addsize = 5;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
-    public void ServeText()
+    public void ReceiveText(GameObject receivetext,GameObject receivebase,TextMeshPro receivetmp)
     {
-
+        text = receivetext;
+        basepoint = receivebase;
+        textMeshPro = receivetmp;
     }
     //(xyz‘ƒ{ƒ^ƒ“)
     public void PlusPosition(int coordinate)

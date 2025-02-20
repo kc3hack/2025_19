@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 70195882}
   m_Layer: 0
-  m_Name: basepoint
+  m_Name: basepoint_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -333,7 +333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 101401838}
   m_Layer: 0
-  m_Name: basepoint
+  m_Name: basepoint_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -679,7 +679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagetarget_number: 2
+  imagetarget_number: 7
 --- !u!114 &164758509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1131,8 +1131,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1500367133}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 455892900}
+        m_TargetAssemblyTypeName: Sato_ButtonManager, Assembly-CSharp
         m_MethodName: PlusPosition
         m_Mode: 3
         m_Arguments:
@@ -1347,6 +1347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 455892899}
   - component: {fileID: 455892898}
+  - component: {fileID: 455892900}
   m_Layer: 0
   m_Name: TextFindManager
   m_TagString: Untagged
@@ -1375,6 +1376,15 @@ MonoBehaviour:
   - {fileID: 946087452}
   - {fileID: 164758506}
   - {fileID: 1456438791}
+  basepoints:
+  - {fileID: 777942893}
+  - {fileID: 1368252217}
+  - {fileID: 1572441892}
+  - {fileID: 1806594228}
+  - {fileID: 101401837}
+  - {fileID: 1155700347}
+  - {fileID: 70195881}
+  - {fileID: 1098486063}
   tmp:
   - {fileID: 572580371}
   - {fileID: 1890476635}
@@ -1384,8 +1394,10 @@ MonoBehaviour:
   - {fileID: 946087456}
   - {fileID: 164758510}
   - {fileID: 1456438795}
+  imagetargetnumber: 0100000002000000030000000400000005000000060000000700000008000000
   inputTextScript: {fileID: 1399872913}
-  buttonManagerScript: {fileID: 0}
+  buttonManagerScript: {fileID: 455892900}
+  sendTextScript: {fileID: 1562709688}
 --- !u!4 &455892899
 Transform:
   m_ObjectHideFlags: 0
@@ -1401,6 +1413,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &455892900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455892897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff718bb7d0cf1d44b90db6a28c6179f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 572580367}
+  basepoint: {fileID: 777942893}
+  textMeshPro: {fileID: 572580371}
 --- !u!1 &482606714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,7 +1575,7 @@ GameObject:
   - component: {fileID: 556838829}
   - component: {fileID: 556838828}
   - component: {fileID: 556838827}
-  - component: {fileID: 556838826}
+  - component: {fileID: 556838830}
   m_Layer: 0
   m_Name: ImageTarget_4
   m_TagString: Untagged
@@ -1556,25 +1583,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &556838826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556838825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 556838828}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: as20230106004565
-  mDatasetName: Vuforia/KC3HackAppData.xml
-  mCastedBehaviour: {fileID: 556838828}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &556838827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1675,7 +1683,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 556838826}
+  mPreview: {fileID: 556838830}
 --- !u!4 &556838829
 Transform:
   m_ObjectHideFlags: 0
@@ -1693,6 +1701,25 @@ Transform:
   - {fileID: 101401838}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &556838830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556838825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 556838828}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: as20230106004565
+  mDatasetName: Vuforia/KC3HackAppData.xml
+  mCastedBehaviour: {fileID: 556838828}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &572580367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1744,7 +1771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagetarget_number: 2
+  imagetarget_number: 1
 --- !u!114 &572580370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1909,7 +1936,7 @@ GameObject:
   - component: {fileID: 616594325}
   - component: {fileID: 616594324}
   - component: {fileID: 616594323}
-  - component: {fileID: 616594322}
+  - component: {fileID: 616594326}
   m_Layer: 0
   m_Name: ImageTarget_5
   m_TagString: Untagged
@@ -1917,25 +1944,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &616594322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 616594321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 616594324}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: myakumyaku_standard
-  mDatasetName: Vuforia/KC3HackAppData.xml
-  mCastedBehaviour: {fileID: 616594324}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &616594323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2036,7 +2044,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 616594322}
+  mPreview: {fileID: 616594326}
 --- !u!4 &616594325
 Transform:
   m_ObjectHideFlags: 0
@@ -2054,6 +2062,25 @@ Transform:
   - {fileID: 1155700348}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &616594326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616594321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 616594324}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: myakumyaku_standard
+  mDatasetName: Vuforia/KC3HackAppData.xml
+  mCastedBehaviour: {fileID: 616594324}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &634410219
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,7 +2230,7 @@ GameObject:
   - component: {fileID: 668525405}
   - component: {fileID: 668525404}
   - component: {fileID: 668525403}
-  - component: {fileID: 668525402}
+  - component: {fileID: 668525406}
   m_Layer: 0
   m_Name: ImageTarget_6
   m_TagString: Untagged
@@ -2211,25 +2238,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &668525402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668525401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 668525404}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: 1xmdy2vm_400x400
-  mDatasetName: Vuforia/KC3HackAppData.xml
-  mCastedBehaviour: {fileID: 668525404}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &668525403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2330,7 +2338,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 668525402}
+  mPreview: {fileID: 668525406}
 --- !u!4 &668525405
 Transform:
   m_ObjectHideFlags: 0
@@ -2348,6 +2356,25 @@ Transform:
   - {fileID: 70195882}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &668525406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668525401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 668525404}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: 1xmdy2vm_400x400
+  mDatasetName: Vuforia/KC3HackAppData.xml
+  mCastedBehaviour: {fileID: 668525404}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &678868064
 GameObject:
   m_ObjectHideFlags: 0
@@ -2569,8 +2596,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1500367133}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 455892900}
+        m_TargetAssemblyTypeName: Sato_ButtonManager, Assembly-CSharp
         m_MethodName: MinusPosition
         m_Mode: 3
         m_Arguments:
@@ -2629,7 +2656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 777942894}
   m_Layer: 0
-  m_Name: basepoint
+  m_Name: basepoint_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3009,8 +3036,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1500367133}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 455892900}
+        m_TargetAssemblyTypeName: Sato_ButtonManager, Assembly-CSharp
         m_MethodName: MinusPosition
         m_Mode: 3
         m_Arguments:
@@ -3110,7 +3137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagetarget_number: 2
+  imagetarget_number: 4
 --- !u!114 &937323779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3420,7 +3447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagetarget_number: 2
+  imagetarget_number: 6
 --- !u!114 &946087455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4180,7 +4207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1098486064}
   m_Layer: 0
-  m_Name: basepoint
+  m_Name: basepoint_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4211,7 +4238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1155700348}
   m_Layer: 0
-  m_Name: basepoint
+  m_Name: basepoint_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4243,7 +4270,7 @@ GameObject:
   - component: {fileID: 1243429158}
   - component: {fileID: 1243429157}
   - component: {fileID: 1243429156}
-  - component: {fileID: 1243429155}
+  - component: {fileID: 1243429159}
   m_Layer: 0
   m_Name: ImageTarget_7
   m_TagString: Untagged
@@ -4251,25 +4278,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1243429155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243429154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1243429157}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: logo
-  mDatasetName: Vuforia/KC3HackAppData.xml
-  mCastedBehaviour: {fileID: 1243429157}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1243429156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4370,7 +4378,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1243429155}
+  mPreview: {fileID: 1243429159}
 --- !u!4 &1243429158
 Transform:
   m_ObjectHideFlags: 0
@@ -4388,6 +4396,25 @@ Transform:
   - {fileID: 1098486064}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1243429159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243429154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1243429157}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: logo
+  mDatasetName: Vuforia/KC3HackAppData.xml
+  mCastedBehaviour: {fileID: 1243429157}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1291984513
 GameObject:
   m_ObjectHideFlags: 0
@@ -4471,8 +4498,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1500367133}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 455892900}
+        m_TargetAssemblyTypeName: Sato_ButtonManager, Assembly-CSharp
         m_MethodName: PlusPosition
         m_Mode: 3
         m_Arguments:
@@ -4532,7 +4559,7 @@ GameObject:
   - component: {fileID: 1330107158}
   - component: {fileID: 1330107157}
   - component: {fileID: 1330107156}
-  - component: {fileID: 1330107155}
+  - component: {fileID: 1330107159}
   m_Layer: 0
   m_Name: ImageTarget_3
   m_TagString: Untagged
@@ -4540,25 +4567,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1330107155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330107154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1330107157}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: spain
-  mDatasetName: Vuforia/KC3HackAppData.xml
-  mCastedBehaviour: {fileID: 1330107157}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1330107156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4659,7 +4667,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1330107155}
+  mPreview: {fileID: 1330107159}
 --- !u!4 &1330107158
 Transform:
   m_ObjectHideFlags: 0
@@ -4677,6 +4685,25 @@ Transform:
   - {fileID: 1806594229}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1330107159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330107154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1330107157}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: spain
+  mDatasetName: Vuforia/KC3HackAppData.xml
+  mCastedBehaviour: {fileID: 1330107157}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1341165423
 GameObject:
   m_ObjectHideFlags: 0
@@ -4981,7 +5008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1368252218}
   m_Layer: 0
-  m_Name: basepoint
+  m_Name: basepoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5085,8 +5112,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1500367133}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 455892900}
+        m_TargetAssemblyTypeName: Sato_ButtonManager, Assembly-CSharp
         m_MethodName: MinusPosition
         m_Mode: 3
         m_Arguments:
@@ -5218,8 +5245,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1500367133}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 455892900}
+        m_TargetAssemblyTypeName: Sato_ButtonManager, Assembly-CSharp
         m_MethodName: ResetPosition
         m_Mode: 1
         m_Arguments:
@@ -5662,7 +5689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagetarget_number: 2
+  imagetarget_number: 5
 --- !u!114 &1451907868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5867,7 +5894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagetarget_number: 2
+  imagetarget_number: 8
 --- !u!114 &1456438794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6070,57 +6097,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1500367132
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1500367134}
-  - component: {fileID: 1500367133}
-  m_Layer: 5
-  m_Name: ButtonManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1500367133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1500367132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff718bb7d0cf1d44b90db6a28c6179f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  basepoint: {fileID: 0}
-  textMeshPro: {fileID: 0}
---- !u!224 &1500367134
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1500367132}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2121401169}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1530561154
 GameObject:
   m_ObjectHideFlags: 0
@@ -6205,6 +6181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610f420f7725b00468e02ef8577e8d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imagenum: 0
   text: {fileID: 0}
   textMeshPro: {fileID: 0}
 --- !u!1 &1572441892
@@ -6217,7 +6194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1572441893}
   m_Layer: 0
-  m_Name: basepoint
+  m_Name: basepoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6801,7 +6778,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1500367133}
+      - m_Target: {fileID: 455892900}
         m_TargetAssemblyTypeName: Sato_ButtonManager, Assembly-CSharp
         m_MethodName: PlusTextSize
         m_Mode: 1
@@ -7024,7 +7001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagetarget_number: 2
+  imagetarget_number: 3
 --- !u!114 &1707984420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7206,7 +7183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1806594229}
   m_Layer: 0
-  m_Name: basepoint
+  m_Name: basepoint_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7443,7 +7420,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1500367133}
+      - m_Target: {fileID: 455892900}
         m_TargetAssemblyTypeName: Sato_ButtonManager, Assembly-CSharp
         m_MethodName: MinusTextSize
         m_Mode: 1
@@ -7902,8 +7879,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1500367133}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 455892900}
+        m_TargetAssemblyTypeName: Sato_ButtonManager, Assembly-CSharp
         m_MethodName: PlusPosition
         m_Mode: 3
         m_Arguments:
@@ -7985,7 +7962,6 @@ RectTransform:
   - {fileID: 1347057398}
   - {fileID: 1400879253}
   - {fileID: 861946537}
-  - {fileID: 1500367134}
   m_Father: {fileID: 944192967}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

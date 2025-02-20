@@ -23,9 +23,9 @@ public class Sato_InputText : MonoBehaviour
         }
     }
 
-    public void ServeTMP(TextMeshPro serveTMP)
+    public void ReceiveTMP(TextMeshPro receiveTMP)
     {
-        textMeshPro = serveTMP;
+        textMeshPro = receiveTMP;
     }
     //テキストが変更されたときに呼び出されるメソッド
     private void UpdateTextMeshPro(string newText)
