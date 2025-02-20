@@ -3,6 +3,7 @@ using TMPro;
 
 public class Sato_InputText : MonoBehaviour
 {
+    //Miyazakiのスクリプトを改良
     public TMP_InputField inputField; // 入力用の Input Field (TMP_InputField)
     public TextMeshPro textMeshPro;   // 出力先の TextMeshPro (3Dオブジェクト)
     // Start is called once before the first execution of Update after the MonoBehaviour is created

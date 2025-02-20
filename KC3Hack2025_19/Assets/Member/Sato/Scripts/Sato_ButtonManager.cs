@@ -60,11 +60,12 @@ public class Sato_ButtonManager : MonoBehaviour
         text.transform.position = textposition;
     }
     //(位置リセットボタン)
-    public void ResetPosition()
+    public void ResetButton()
     {
         Vector3 firstposition = basepoint.transform.position;
         firstposition.y += 0.1f;
         text.transform.position=firstposition;
+        textMeshPro.fontSize = 36;
     }
     //(サイズ増ボタン)
     public void PlusTextSize()
