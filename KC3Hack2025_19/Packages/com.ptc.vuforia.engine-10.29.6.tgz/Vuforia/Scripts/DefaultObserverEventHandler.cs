@@ -167,6 +167,8 @@ public class DefaultObserverEventHandler : MonoBehaviour
     
     protected virtual void OnTrackingFound()
     {
+        Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
+        Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
         if (mObserverBehaviour)
             SetComponentsEnabled(true);
 
@@ -175,6 +177,8 @@ public class DefaultObserverEventHandler : MonoBehaviour
 
     protected virtual void OnTrackingLost()
     {
+        Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
+        Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
         if (mObserverBehaviour)
             SetComponentsEnabled(false);
 

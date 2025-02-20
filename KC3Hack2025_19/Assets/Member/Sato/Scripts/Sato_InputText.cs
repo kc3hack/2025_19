@@ -23,6 +23,10 @@ public class Sato_InputText : MonoBehaviour
         }
     }
 
+    public void ServeTMP(TextMeshPro serveTMP)
+    {
+        textMeshPro = serveTMP;
+    }
     //テキストが変更されたときに呼び出されるメソッド
     private void UpdateTextMeshPro(string newText)
     {

@@ -14,6 +14,11 @@ public class Sato_ButtonManager : MonoBehaviour
     //text‚Ìsize
     int addsize = 5;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
+    public void ServeText()
+    {
+
+    }
     //(xyz‘ƒ{ƒ^ƒ“)
     public void PlusPosition(int coordinate)
     {
