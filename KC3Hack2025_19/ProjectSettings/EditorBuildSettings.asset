@@ -5,21 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
-    path: Assets/Member/Sato/ARSampleScene.unity
-    guid: cd21bb3b83c039c4b963b12708486335
-  - enabled: 0
-    path: Assets/Member/Miyazaki/MiyazakiScene.unity
-    guid: 8c106a607f011c447a01338cc5078a1a
   - enabled: 1
-    path: Assets/Member/Sato/XYZScene/SatoScene.unity
-    guid: e8a28aee18e90c941a4363e079b94fa9
-  - enabled: 0
-    path: Assets/Member/Kakuda/k_GoogleMap.unity
-    guid: 796f373f5f8d242469541412eeabc37e
+    path: Assets/Member/Kakuda/Conected_Scenes_M/k_Title.unity
+    guid: f440666388a83bb488f7bc3a58789f37
+  - enabled: 1
+    path: Assets/Member/Kakuda/Conected_Scenes_M/k_GoogleMap.unity
+    guid: 526fa8e15c322d1449d6e149cd3760d9
+  - enabled: 1
+    path: Assets/Member/Kakuda/Conected_Scenes_S/K_S_Share.unity
+    guid: 388630b57bffa094ab2ec706401fd452
+  - enabled: 1
+    path: Assets/Member/Kakuda/Conected_Scenes_S/K_S_View.unity
+    guid: 1a5d04113fe891145928281781ae4d2d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
