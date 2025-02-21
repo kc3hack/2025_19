@@ -1127,6 +1127,7 @@ MonoBehaviour:
   DownButton: {fileID: 1923935027}
   InputTextObj: {fileID: 286239431}
   ImageTarget: {fileID: 745263104}
+  markerNumber: 0
 --- !u!1 &745263104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2317,6 +2318,7 @@ MonoBehaviour:
   GeneratePivot: {fileID: 1623360778}
   ImageTarget: {fileID: 745263104}
   creatTextObject: {fileID: 457552765901422945, guid: 90e37195191f27f449d9d736d8f4269d, type: 3}
+  myImagetargetNumber: 0
 --- !u!4 &1937710241
 Transform:
   m_ObjectHideFlags: 0

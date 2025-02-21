@@ -5,11 +5,12 @@ using System.Collections;
 
 public class M_GenerateText : MonoBehaviour
 {
-    private string url = ""; // JsonファイルのURL
+    private string url = "https://khakimink3.sakura.ne.jp/objdata.json"; // JsonファイルのURL
     public GameObject Origin;
     public GameObject GeneratePivot;
     public GameObject ImageTarget;
     public GameObject creatTextObject;
+    public int myImagetargetNumber;
     void Start()
     {
         StartCoroutine(GenerateText());
@@ -22,6 +23,7 @@ public class M_GenerateText : MonoBehaviour
         public float y;
         public float z;
         public string text;
+        public int markerNumber;
     }
 
     [System.Serializable]
@@ -49,7 +51,10 @@ public class M_GenerateText : MonoBehaviour
                 // JSONデータ内の各オブジェクトに対してテキスト生成
                 foreach (ObjectData objData in dataList.objects)
                 {
-                    CreateTextAtOffset(new Vector3(objData.x, objData.y, objData.z), objData.text);
+                    if (objData.markerNumber == myImagetargetNumber)
+                    {
+                        CreateTextAtOffset(new Vector3(objData.x, objData.y, objData.z), objData.text);
+                    }
                 }
             }
         }
