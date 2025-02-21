@@ -238,8 +238,8 @@ GameObject:
   - component: {fileID: 94154273}
   - component: {fileID: 94154272}
   - component: {fileID: 94154271}
-  - component: {fileID: 94154270}
   - component: {fileID: 94154269}
+  - component: {fileID: 94154274}
   m_Layer: 0
   m_Name: ImageTarget_3
   m_TagString: Untagged
@@ -260,25 +260,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagetarget_number: 3
---- !u!114 &94154270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 94154268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 94154272}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: oosaka
-  mDatasetName: Vuforia/KC3HackAppData.xml
-  mCastedBehaviour: {fileID: 94154272}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &94154271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,18 +319,18 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: oosaka
+  mTrackableName: job_programmer
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/KC3HackAppData.xml
-  mAspectRatio: 1
+  mAspectRatio: 0.8025
   mImageTargetType: 0
   mWidth: 0.2
-  mHeight: 0.2
+  mHeight: 0.1605
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 94154270}
+  mPreview: {fileID: 94154274}
 --- !u!4 &94154273
 Transform:
   m_ObjectHideFlags: 0
@@ -359,7 +340,7 @@ Transform:
   m_GameObject: {fileID: 94154268}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalPosition: {x: 0.9, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -368,6 +349,25 @@ Transform:
   - {fileID: 1365284490}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &94154274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94154268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 94154272}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: job_programmer
+  mDatasetName: Vuforia/KC3HackAppData.xml
+  mCastedBehaviour: {fileID: 94154272}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &156110804
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,6 +379,7 @@ GameObject:
   - component: {fileID: 156110805}
   - component: {fileID: 156110807}
   - component: {fileID: 156110806}
+  - component: {fileID: 156110808}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -546,6 +547,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &156110808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156110804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagetarget_number: 7
 --- !u!1 &232006228
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,8 +571,8 @@ GameObject:
   - component: {fileID: 232006233}
   - component: {fileID: 232006232}
   - component: {fileID: 232006231}
-  - component: {fileID: 232006230}
   - component: {fileID: 232006229}
+  - component: {fileID: 232006234}
   m_Layer: 0
   m_Name: ImageTarget_7
   m_TagString: Untagged
@@ -579,25 +593,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagetarget_number: 7
---- !u!114 &232006230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232006228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 232006232}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: oosaka
-  mDatasetName: Vuforia/KC3HackAppData.xml
-  mCastedBehaviour: {fileID: 232006232}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &232006231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,7 +652,7 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: oosaka
+  mTrackableName: logo
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/KC3HackAppData.xml
   mAspectRatio: 1
@@ -668,7 +663,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 232006230}
+  mPreview: {fileID: 232006234}
 --- !u!4 &232006233
 Transform:
   m_ObjectHideFlags: 0
@@ -678,7 +673,7 @@ Transform:
   m_GameObject: {fileID: 232006228}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalPosition: {x: 0.9, y: 0, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -687,6 +682,25 @@ Transform:
   - {fileID: 1215398094}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &232006234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232006228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 232006232}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: logo
+  mDatasetName: Vuforia/KC3HackAppData.xml
+  mCastedBehaviour: {fileID: 232006232}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &232602326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,8 +1473,8 @@ GameObject:
   - component: {fileID: 401738050}
   - component: {fileID: 401738053}
   - component: {fileID: 401738052}
-  - component: {fileID: 401738055}
   - component: {fileID: 401738054}
+  - component: {fileID: 401738055}
   m_Layer: 0
   m_Name: ImageTarget_1
   m_TagString: Untagged
@@ -2644,8 +2658,8 @@ GameObject:
   - component: {fileID: 639051847}
   - component: {fileID: 639051846}
   - component: {fileID: 639051845}
-  - component: {fileID: 639051844}
   - component: {fileID: 639051843}
+  - component: {fileID: 639051848}
   m_Layer: 0
   m_Name: ImageTarget_4
   m_TagString: Untagged
@@ -2666,25 +2680,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagetarget_number: 4
---- !u!114 &639051844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639051842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 639051846}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: oosaka
-  mDatasetName: Vuforia/KC3HackAppData.xml
-  mCastedBehaviour: {fileID: 639051846}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &639051845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2744,7 +2739,7 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: oosaka
+  mTrackableName: wanko
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/KC3HackAppData.xml
   mAspectRatio: 1
@@ -2755,7 +2750,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 639051844}
+  mPreview: {fileID: 639051848}
 --- !u!4 &639051847
 Transform:
   m_ObjectHideFlags: 0
@@ -2765,7 +2760,7 @@ Transform:
   m_GameObject: {fileID: 639051842}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2774,6 +2769,25 @@ Transform:
   - {fileID: 352867903}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &639051848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639051842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 639051846}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: wanko
+  mDatasetName: Vuforia/KC3HackAppData.xml
+  mCastedBehaviour: {fileID: 639051846}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &671101596
 GameObject:
   m_ObjectHideFlags: 0
@@ -2891,8 +2905,8 @@ GameObject:
   - component: {fileID: 684544938}
   - component: {fileID: 684544937}
   - component: {fileID: 684544936}
-  - component: {fileID: 684544935}
   - component: {fileID: 684544934}
+  - component: {fileID: 684544939}
   m_Layer: 0
   m_Name: ImageTarget_2
   m_TagString: Untagged
@@ -2913,25 +2927,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagetarget_number: 2
---- !u!114 &684544935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684544933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 684544937}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: oosaka
-  mDatasetName: Vuforia/KC3HackAppData.xml
-  mCastedBehaviour: {fileID: 684544937}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &684544936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2991,18 +2986,18 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: oosaka
+  mTrackableName: mozuyan
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/KC3HackAppData.xml
-  mAspectRatio: 1
+  mAspectRatio: 1.34074
   mImageTargetType: 0
   mWidth: 0.2
-  mHeight: 0.2
+  mHeight: 0.268148
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 684544935}
+  mPreview: {fileID: 684544939}
 --- !u!4 &684544938
 Transform:
   m_ObjectHideFlags: 0
@@ -3012,7 +3007,7 @@ Transform:
   m_GameObject: {fileID: 684544933}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalPosition: {x: 0.6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3021,6 +3016,25 @@ Transform:
   - {fileID: 733946987}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &684544939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684544933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 684544937}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: mozuyan
+  mDatasetName: Vuforia/KC3HackAppData.xml
+  mCastedBehaviour: {fileID: 684544937}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &707252417
 GameObject:
   m_ObjectHideFlags: 0
@@ -3032,6 +3046,7 @@ GameObject:
   - component: {fileID: 707252418}
   - component: {fileID: 707252420}
   - component: {fileID: 707252419}
+  - component: {fileID: 707252421}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3199,6 +3214,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &707252421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707252417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagetarget_number: 1
 --- !u!1 &733946986
 GameObject:
   m_ObjectHideFlags: 0
@@ -3784,6 +3812,7 @@ GameObject:
   - component: {fileID: 827892564}
   - component: {fileID: 827892566}
   - component: {fileID: 827892565}
+  - component: {fileID: 827892567}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3951,6 +3980,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &827892567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827892563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagetarget_number: 3
 --- !u!1 &985965320
 GameObject:
   m_ObjectHideFlags: 0
@@ -4093,6 +4135,7 @@ GameObject:
   - component: {fileID: 1034756279}
   - component: {fileID: 1034756281}
   - component: {fileID: 1034756280}
+  - component: {fileID: 1034756282}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4260,6 +4303,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1034756282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034756278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagetarget_number: 5
 --- !u!1 &1046814255
 GameObject:
   m_ObjectHideFlags: 0
@@ -4271,8 +4327,8 @@ GameObject:
   - component: {fileID: 1046814260}
   - component: {fileID: 1046814259}
   - component: {fileID: 1046814258}
-  - component: {fileID: 1046814257}
   - component: {fileID: 1046814256}
+  - component: {fileID: 1046814261}
   m_Layer: 0
   m_Name: ImageTarget_0
   m_TagString: Untagged
@@ -4293,25 +4349,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagetarget_number: 0
---- !u!114 &1046814257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046814255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1046814259}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: surprise_party_woman
-  mDatasetName: Vuforia/KC3HackAppData.xml
-  mCastedBehaviour: {fileID: 1046814259}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1046814258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4382,7 +4419,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1046814257}
+  mPreview: {fileID: 1046814261}
 --- !u!4 &1046814260
 Transform:
   m_ObjectHideFlags: 0
@@ -4401,6 +4438,25 @@ Transform:
   - {fileID: 1255366796}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1046814261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046814255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1046814259}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: surprise_party_woman
+  mDatasetName: Vuforia/KC3HackAppData.xml
+  mCastedBehaviour: {fileID: 1046814259}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1215398093
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,8 +4622,8 @@ GameObject:
   - component: {fileID: 1240376397}
   - component: {fileID: 1240376396}
   - component: {fileID: 1240376395}
-  - component: {fileID: 1240376394}
   - component: {fileID: 1240376393}
+  - component: {fileID: 1240376398}
   m_Layer: 0
   m_Name: ImageTarget_6
   m_TagString: Untagged
@@ -4588,25 +4644,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagetarget_number: 6
---- !u!114 &1240376394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240376392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1240376396}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: oosaka
-  mDatasetName: Vuforia/KC3HackAppData.xml
-  mCastedBehaviour: {fileID: 1240376396}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1240376395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4666,7 +4703,7 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: oosaka
+  mTrackableName: 1xmdy2vm_400x400
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/KC3HackAppData.xml
   mAspectRatio: 1
@@ -4677,7 +4714,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1240376394}
+  mPreview: {fileID: 1240376398}
 --- !u!4 &1240376397
 Transform:
   m_ObjectHideFlags: 0
@@ -4687,7 +4724,7 @@ Transform:
   m_GameObject: {fileID: 1240376392}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalPosition: {x: 0.6, y: 0, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4696,6 +4733,25 @@ Transform:
   - {fileID: 322085343}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1240376398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240376392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1240376396}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: 1xmdy2vm_400x400
+  mDatasetName: Vuforia/KC3HackAppData.xml
+  mCastedBehaviour: {fileID: 1240376396}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1244089454
 GameObject:
   m_ObjectHideFlags: 0
@@ -5008,6 +5064,7 @@ GameObject:
   - component: {fileID: 1327470185}
   - component: {fileID: 1327470187}
   - component: {fileID: 1327470186}
+  - component: {fileID: 1327470188}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5175,6 +5232,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1327470188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327470184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagetarget_number: 6
 --- !u!1 &1364310713
 GameObject:
   m_ObjectHideFlags: 0
@@ -5782,8 +5852,8 @@ GameObject:
   - component: {fileID: 1475075361}
   - component: {fileID: 1475075360}
   - component: {fileID: 1475075359}
-  - component: {fileID: 1475075358}
   - component: {fileID: 1475075357}
+  - component: {fileID: 1475075362}
   m_Layer: 0
   m_Name: ImageTarget_5
   m_TagString: Untagged
@@ -5804,25 +5874,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagetarget_number: 5
---- !u!114 &1475075358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475075356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1475075360}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: oosaka
-  mDatasetName: Vuforia/KC3HackAppData.xml
-  mCastedBehaviour: {fileID: 1475075360}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1475075359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5882,7 +5933,7 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: oosaka
+  mTrackableName: okan
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/KC3HackAppData.xml
   mAspectRatio: 1
@@ -5893,7 +5944,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1475075358}
+  mPreview: {fileID: 1475075362}
 --- !u!4 &1475075361
 Transform:
   m_ObjectHideFlags: 0
@@ -5903,7 +5954,7 @@ Transform:
   m_GameObject: {fileID: 1475075356}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalPosition: {x: 0.3, y: 0, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5912,6 +5963,25 @@ Transform:
   - {fileID: 774002843}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1475075362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475075356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1475075360}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: okan
+  mDatasetName: Vuforia/KC3HackAppData.xml
+  mCastedBehaviour: {fileID: 1475075360}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1500417703
 GameObject:
   m_ObjectHideFlags: 0
@@ -6131,6 +6201,7 @@ GameObject:
   - component: {fileID: 1521167190}
   - component: {fileID: 1521167192}
   - component: {fileID: 1521167191}
+  - component: {fileID: 1521167193}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6298,6 +6369,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1521167193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521167189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagetarget_number: 4
 --- !u!1 &1559077985
 GameObject:
   m_ObjectHideFlags: 0
@@ -6494,6 +6578,7 @@ GameObject:
   - component: {fileID: 1721205282}
   - component: {fileID: 1721205284}
   - component: {fileID: 1721205283}
+  - component: {fileID: 1721205285}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6661,6 +6746,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1721205285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721205281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagetarget_number: 8
 --- !u!1 &1823210404
 GameObject:
   m_ObjectHideFlags: 0
@@ -6894,6 +6992,7 @@ GameObject:
   - component: {fileID: 1921517647}
   - component: {fileID: 1921517646}
   - component: {fileID: 1921517645}
+  - component: {fileID: 1921517648}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -7061,6 +7160,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.036}
   m_SizeDelta: {x: 50, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1921517648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921517644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc43e6d634fdf04bac3b705f6f02de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagetarget_number: 2
 --- !u!1 &2079195680
 GameObject:
   m_ObjectHideFlags: 0
