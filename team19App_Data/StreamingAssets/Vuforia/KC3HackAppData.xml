@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="onepiece01_luffy" size="0.200000 0.200000" />
+    <ImageTarget name="myakumyaku_octopus" size="0.200000 0.193827" />
+    <ImageTarget name="myakumyaku_insects" size="0.200000 0.181287" />
+    <ImageTarget name="myakumyaku_human" size="0.200000 0.346789" />
+    <ImageTarget name="myakumyaku_fashionable" size="0.200000 0.259310" />
+    <ImageTarget name="myakumyaku_dragon" size="0.200000 0.226027" />
+    <ImageTarget name="myakumyaku_doughnut" size="0.200000 0.089189" />
+    <ImageTarget name="myakumyaku_bird" size="0.200000 0.207407" />
+    <ImageTarget name="gvfvnodipd7g2cy1739928265_1739928339" size="0.200000 0.200000" />
+    <ImageTarget name="brazil" size="0.200000 0.136090" />
+    <ImageTarget name="america_daitouryousen_man2" size="0.200000 0.120000" />
+    <ImageTarget name="surprise_party_woman" size="0.200000 0.200000" />
+    <ImageTarget name="oosaka" size="0.200000 0.200000" />
+    <ImageTarget name="mozuyan" size="0.200000 0.268148" />
+    <ImageTarget name="job_programmer" size="0.200000 0.160500" />
+    <ImageTarget name="hanitan" size="0.200000 0.321739" />
+    <ImageTarget name="cat_mikeneko2" size="0.200000 0.225989" />
+    <ImageTarget name="car_rain" size="0.200000 0.159000" />
+    <ImageTarget name="wanko" size="0.200000 0.200000" />
+    <ImageTarget name="okan" size="0.200000 0.200000" />
+    <ImageTarget name="honakun" size="0.200000 0.200000" />
+    <ImageTarget name="as20230106004565" size="0.200000 0.141562" />
+    <ImageTarget name="myakumyaku_standard" size="0.200000 0.114419" />
+    <ImageTarget name="1xmdy2vm_400x400" size="0.200000 0.200000" />
+    <ImageTarget name="logo" size="0.200000 0.200000" />
+  </Tracking>
+</QCARConfig>

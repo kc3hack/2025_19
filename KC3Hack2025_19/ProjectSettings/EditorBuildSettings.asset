@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Member/Kakuda/k_GoogleMap.unity
     guid: 796f373f5f8d242469541412eeabc37e
+  - enabled: 0
+    path: Assets/Member/Sato/Copy_Miyazaki/Copy_MiyazakiScene.unity
+    guid: 018a108d028786d478aabeaa1d2521fd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
