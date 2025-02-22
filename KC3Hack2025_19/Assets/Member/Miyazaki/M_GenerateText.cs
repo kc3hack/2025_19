@@ -14,6 +14,7 @@ public class M_GenerateText : MonoBehaviour
     void Start()
     {
         StartCoroutine(GenerateText());
+        Debug.Log("afdsaaaaaaaaaa");
     }
 
     [System.Serializable]
