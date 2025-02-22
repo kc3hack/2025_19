@@ -165,7 +165,7 @@ PlayerSettings:
   androidMinAspectRatio: 1
   applicationIdentifier:
     Android: com.KC3Hack2025_team19.team19ARAPPP
-    Standalone: com.Unity-Technologies.com.unity.template.urp-blank
+    Standalone: com.KC3Hack2025-team19.team19ARAPPP
     iPhone: com.Unity-Technologies.com.unity.template.urp-blank
   buildNumber:
     Standalone: 0

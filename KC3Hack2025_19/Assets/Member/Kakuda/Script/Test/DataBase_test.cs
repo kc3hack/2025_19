@@ -29,15 +29,13 @@ public class DataBase_test : MonoBehaviour
         public int marker;//ARマーカーの番号
         public Vector3 pos;//ARを表示する座標
         public string text;//ARで表示される内容
-        public Quaternion rot;
 
         //コンストラクタ
-        public AR_Data(int marker, Vector3 pos, string text, Quaternion rot)
+        public AR_Data(int marker, Vector3 pos, string text)
         {
             this.marker = marker;//ARマーカーの番号
             this.pos = pos;//ARを表示する座標
             this.text = text;//ARで表示される内容
-            this.rot = rot;//回転を入力
         }
     }
 }

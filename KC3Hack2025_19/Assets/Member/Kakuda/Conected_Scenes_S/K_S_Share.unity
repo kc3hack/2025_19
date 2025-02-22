@@ -2354,13 +2354,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: myakumyaku_standard
+  mTrackableName: mozuyan
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/KC3HackAppData.xml
-  mAspectRatio: 0.572095
+  mAspectRatio: 1.34074
   mImageTargetType: 0
   mWidth: 0.2
-  mHeight: 0.114419
+  mHeight: 0.268148
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2397,7 +2397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 616594324}
   mHiddenRoot: {fileID: 0}
-  mTargetName: myakumyaku_standard
+  mTargetName: mozuyan
   mDatasetName: Vuforia/KC3HackAppData.xml
   mCastedBehaviour: {fileID: 616594324}
   mMeshFilter: {fileID: 0}
@@ -5307,13 +5307,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: spain
+  mTrackableName: surprise_party_woman
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/KC3HackAppData.xml
-  mAspectRatio: 0.66419
+  mAspectRatio: 1
   mImageTargetType: 0
-  mWidth: 0.19999999
-  mHeight: 0.132838
+  mWidth: 0.2
+  mHeight: 0.2
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -5350,7 +5350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1330107157}
   mHiddenRoot: {fileID: 0}
-  mTargetName: spain
+  mTargetName: surprise_party_woman
   mDatasetName: Vuforia/KC3HackAppData.xml
   mCastedBehaviour: {fileID: 1330107157}
   mMeshFilter: {fileID: 0}
@@ -7952,7 +7952,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1562709688}
         m_TargetAssemblyTypeName: Sato_SendText, Assembly-CSharp
-        m_MethodName: Testbutton
+        m_MethodName: SendDecidedText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
