@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.Networking;
 using System.Collections;
 using System.Text;
+using UnityEngine.SceneManagement;
 
 public class M_PutText : MonoBehaviour
 {
@@ -12,7 +13,6 @@ public class M_PutText : MonoBehaviour
     public GameObject DownButton;
     public GameObject InputTextObj;
     public GameObject ImageTarget;
-    public GameObject generateTextObj;
     public int markerNumber; //ここに、ImageTargetの番号を入れる
 
     public void PutTextObject()
@@ -55,8 +55,6 @@ public class M_PutText : MonoBehaviour
 
     void GenerateText()
     {
-        //　本番ではここはシーン切り替えにする
-        generateTextObj.GetComponent<M_GenerateText>().enabled = true;
-        InputTextObj.SetActive(false);
+        SceneManager.LoadScene("ViewScene");
     }
 }
