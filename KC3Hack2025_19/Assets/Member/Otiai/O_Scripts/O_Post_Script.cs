@@ -10,7 +10,7 @@ using static UnityEditor.Progress;
 
 public class Post_Script : MonoBehaviour
 {
-    private string flaskUrl = "http://127.0.0.1:5000/post";
+    private string flaskUrl = "https://khakimink3.sakura.ne.jp/objdata.json";
 
     private float rnd;
 
@@ -96,15 +96,15 @@ public class Post_Script : MonoBehaviour
             string json = request.downloadHandler.text;
             Debug.Log(json);
 
-            Posts posts = JsonUtility.FromJson<Posts>(json);
-            List<Post> postList = new List<Post>(posts.posts);
+            //Posts posts = JsonUtility.FromJson<Posts>(json);
+            //List<Post> postList = new List<Post>(posts.posts);
 
             //List<Post> dataList = JsonUtility.FromJson<ListWrapper>(json).data;
 
-            foreach (Post post in postList)
-            {
-                Debug.Log(post.number + post.text + post.location_x + post.location_y +post.location_z);
-            }
+            //foreach (Post post in postList)
+            //{
+            //    Debug.Log(post.number + post.text + post.location_x + post.location_y +post.location_z);
+            //}
 
             //if (request.result == UnityWebRequest.Result.Success)
             //{
@@ -121,6 +121,7 @@ public class Post_Script : MonoBehaviour
     void Start()
     {
         rnd = Random.Range(1.0f, 5.0f);
+        StartCoroutine(GetDataFromFlask());
     }
 
     // Update is called once per frame

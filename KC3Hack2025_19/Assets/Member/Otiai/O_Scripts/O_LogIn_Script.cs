@@ -1,66 +1,60 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System.Text;
 using UnityEngine.Networking;
 using System.Collections;
-using System.Runtime.CompilerServices;
 using UnityEngine.SceneManagement;
 
 public class LogIn_Script : MonoBehaviour
 {
-    private string flaskUrl = "http://127.0.0.1:5000/login";
+    private string url = "https://khakimink3.sakura.ne.jp/userdata.json"; // JsonファイルのURL
 
     [SerializeField] private TextMeshProUGUI usernameText;
     [SerializeField] private TextMeshProUGUI passwordText;
     [SerializeField] private TextMeshProUGUI errorText;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private bool None = true;
+
     void Start()
     {
         errorText.text = "";
     }
 
-    public void Login()
+    public void LogIn()
     {
-        StartCoroutine(SendDataToFlask());
+        StartCoroutine(GetData());
     }
 
-    IEnumerator SendDataToFlask()
+    IEnumerator GetData() //コルーチンに変更
     {
-        // 送信するJSONデータ
-        User user = new User();
-        user.username = usernameText.text;
-        user.password = passwordText.text;
-        string jsonData = JsonUtility.ToJson(user);
-        byte[] jsonBytes = Encoding.UTF8.GetBytes(jsonData);
-
-        // HTTPリクエスト作成
-        using (UnityWebRequest request = new UnityWebRequest(flaskUrl, "POST"))
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {
-            request.uploadHandler = new UploadHandlerRaw(jsonBytes);
-            request.downloadHandler = new DownloadHandlerBuffer();
-            request.SetRequestHeader("Content-Type", "application/json");
+            yield return webRequest.SendWebRequest();
 
-            yield return request.SendWebRequest();
-
-            // レスポンスを取得 ここでログインの可否を判定し、シーンの遷移を行う
-            if (request.result == UnityWebRequest.Result.Success)
+            if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError)
             {
-                Status loginStatus = JsonUtility.FromJson<Status>(request.downloadHandler.text);
-                if (loginStatus.status == "success")
-                {
-                    Debug.Log("Response: " + request.downloadHandler.text);
-
-                    SceneManager.LoadScene("SelectModeScene");
-                }
-                if (loginStatus.status == "failed")
-                {
-                    errorText.text = "ユーザー名かパスワード、または、その両方が間違っています";
-                }
+                Debug.LogError("Error: " + webRequest.error);
             }
             else
             {
-                Debug.LogError("Request Failed: " + request.error);
+                string jsonString = webRequest.downloadHandler.text;
+                UserDataList dataList = JsonUtility.FromJson<UserDataList>(jsonString);
+
+                // JSONデータ内のユーザー名とパスワードが入力したものと同じか調べる
+                foreach (User userData in dataList.users)
+                {
+                    if (userData.username == usernameText.text && userData.password == passwordText.text)
+                    {
+                        //合っていたらシーンを切り替える
+                        ChangeSelectScene();
+                        None = false;
+                    }
+                }
+
+                if (None == true)
+                {
+                    errorText.text = "ユーザー名かパスワード、または、その両方が間違っています";
+                }
+
             }
         }
     }
@@ -69,15 +63,32 @@ public class LogIn_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    //選択画面へ切り替え
+    void ChangeSelectScene()
+    {
+        //本番では、選択画面へ切り替え
+        SceneManager.LoadScene("OtiaiScene");
     }
 
 }
 
+
+
+
+[System.Serializable]
 public class User
 {
     public string username;
     public string password;
+}
+
+[System.Serializable]
+public class UserDataList
+{
+    public User[] users;
 }
 
 public class Status

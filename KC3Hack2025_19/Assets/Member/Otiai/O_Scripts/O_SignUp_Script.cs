@@ -1,72 +1,59 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using System.Text;
 using UnityEngine.Networking;
 using System.Collections;
-using System.Runtime.CompilerServices;
+using System.Text;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class SignUp_Script : MonoBehaviour
 {
-    private string flaskUrl = "http://127.0.0.1:5000/signup";
+    private string postUrl = "https://khakimink3.sakura.ne.jp/kc3hack19_users.php"; // PHPファイルのURL
 
     [SerializeField] private TextMeshProUGUI usernameText;
     [SerializeField] private TextMeshProUGUI passwordText;
 
-    IEnumerator SendDataToFlask()
+
+    public void SignUp()
     {
-        // 送信するJSONデータ
-        User user = new User();
-        user.username = usernameText.text;
-        user.password = passwordText.text;
-        string jsonData = JsonUtility.ToJson(user);
-        byte[] jsonBytes = Encoding.UTF8.GetBytes(jsonData);
+        StartCoroutine(SendTextData());
+    }
+    IEnumerator SendTextData()
+    {
 
-        // HTTPリクエスト作成
-        using (UnityWebRequest request = new UnityWebRequest(flaskUrl, "POST"))
+        User usrData = new User
         {
-            request.uploadHandler = new UploadHandlerRaw(jsonBytes);
-            request.downloadHandler = new DownloadHandlerBuffer();
-            request.SetRequestHeader("Content-Type", "application/json");
+            username = usernameText.text,
+            password = passwordText.text
+        };
 
-            yield return request.SendWebRequest();
+        // 送信するデータをJSON形式に整形 (imagetargetNumber を使用)
+        string jsonData = JsonUtility.ToJson(usrData);
 
-            // レスポンスを取得 ここでログインの可否を判定し、シーンの遷移を行う
-            if (request.result == UnityWebRequest.Result.Success)
+        // UnityWebRequest を使って POST リクエストを送信
+        using (UnityWebRequest www = new UnityWebRequest(postUrl, "POST"))
+        {
+            byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonData);
+            www.uploadHandler = (UploadHandler)new UploadHandlerRaw(bodyRaw);
+            www.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
+            www.SetRequestHeader("Content-Type", "application/json");
+
+            yield return www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
             {
-                Status loginStatus = JsonUtility.FromJson<Status>(request.downloadHandler.text);
-                if (loginStatus.status == "success")
-                {
-                    Debug.Log("Response: " + request.downloadHandler.text);
-                    SceneManager.LoadScene("LogInScene");
-                }
-                if (loginStatus.status == "failed")
-                {
-                    Debug.LogError("Request Failed: " + request.error);
-                }
+                Debug.LogError(www.error);
             }
             else
             {
-                Debug.LogError("Request Failed: " + request.error);
+                ChangeLoginScene();
             }
         }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void ChangeLoginScene()
     {
-        
-    }
-
-    public void Signup()
-    {
-        StartCoroutine(SendDataToFlask());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //　本番ではここはシーン切り替えにする ログインシーンに切り替え
+        SceneManager.LoadScene("LogInScene");
     }
 }
