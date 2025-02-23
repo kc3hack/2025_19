@@ -53,6 +53,9 @@ public class K_MapTexter : MonoBehaviour
         // centerで取得するミニマップの中央座標を設定　Input.location.lastDataでGPSによる現在の座標を取得
         query += "&center=" + UnityWebRequest.UnEscapeURL(string.Format("{0},{1}", Input.location.lastData.latitude, Input.location.lastData.longitude));
 
+        pin_latitude.Add(Input.location.lastData.latitude);
+        pin_longitude.Add(Input.location.lastData.longitude);
+
         //保存されているマーカーの回数繰り返す。
         for (int i = 0; i < pin_longitude.Count; i++)
         {
