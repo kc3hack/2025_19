@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="kc3logo" size="0.200000 0.200000" />
+    <ImageTarget name="dtk_logo" size="0.200000 0.200000" />
+    <ImageTarget name="myakumyaku" size="0.200000 0.302455" />
+    <ImageTarget name="luce" size="0.200000 0.314557" />
+    <ImageTarget name="italia-chan" size="0.200000 0.365217" />
+    <ImageTarget name="parka" size="0.200000 0.243092" />
+    <ImageTarget name="haru" size="0.200000 0.422084" />
+    <ImageTarget name="bhumi-jai" size="0.200000 0.218182" />
+    <ImageTarget name="aka-shiro-aka" size="0.200000 0.152555" />
+    <ImageTarget name="miska" size="0.200000 0.131703" />
+    <ImageTarget name="shifaa" size="0.200000 0.211166" />
+    <ImageTarget name="marsbaby" size="0.200000 0.268047" />
+    <ImageTarget name="merli" size="0.200000 0.246575" />
+  </Tracking>
+</QCARConfig>
